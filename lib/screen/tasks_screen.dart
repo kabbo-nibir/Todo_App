@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-gi
+
 class TasksScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -43,26 +43,27 @@ class TasksScreen extends StatelessWidget {
           ),
           Expanded(
             child: Container(
-                padding: EdgeInsets.symmetric(horizontal: 20.0),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(20.0),
-                    topRight: Radius.circular(20.0),
-                  ),
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20.0),
+                  topRight: Radius.circular(20.0),
                 ),
-                child: ListView(
-                  children: <Widget>[
-                    ListTile(
-                      title: Text('This is a task'),
-                      trailing: Checkbox(value: false),
-                    ),
-                    ListTile(
-                      title: Text('This is another task'),
-                      trailing: Checkbox(value: false),
-                    ),
-                  ],
-                )),
+              ),
+              child: ListView(
+                children: <Widget>[
+                  ListTile(
+                    title: Text('This is a task'),
+                    trailing: Checkbox(value: false),
+                  ),
+                  ListTile(
+                    title: Text('This is another task'),
+                    trailing: Checkbox(value: false),
+                  ),
+                ],
+              ),
+            ),
           ),
         ],
       ),
